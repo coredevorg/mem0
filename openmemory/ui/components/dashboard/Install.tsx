@@ -15,6 +15,7 @@ const clientTabs = [
   { key: "witsy", label: "Witsy", icon: "/images/witsy.png" },
   { key: "enconvo", label: "Enconvo", icon: "/images/enconvo.png" },
   { key: "augment", label: "Augment", icon: "/images/augment.png" },
+  { key: "gemini", label: "Gemini", icon: "/images/gemini.png" },
 ];
 
 const colorGradientMap: { [key: string]: string } = {
@@ -32,6 +33,8 @@ const colorGradientMap: { [key: string]: string } = {
     "data-[state=active]:bg-[linear-gradient(to_top,_rgba(33,135,255,0.3),_rgba(33,135,255,0))] data-[state=active]:border-[#2187FF]",
   enconvo:
     "data-[state=active]:bg-[linear-gradient(to_top,_rgba(126,63,242,0.3),_rgba(126,63,242,0))] data-[state=active]:border-[#7E3FF2]",
+  gemini:
+    "data-[state=active]:bg-[linear-gradient(to_top,_rgba(66,133,244,0.3),_rgba(66,133,244,0))] data-[state=active]:border-[#4285F4]",
 };
 
 const getColorGradient = (color: string) => {
@@ -96,7 +99,7 @@ export const Install = () => {
       </div>
 
       <Tabs defaultValue="claude" className="w-full">
-        <TabsList className="bg-transparent border-b border-zinc-800 rounded-none w-full justify-start gap-0 p-0 grid grid-cols-9">
+        <TabsList className="bg-transparent border-b border-zinc-800 rounded-none w-full justify-start gap-0 p-0 grid grid-cols-10">
           {allTabs.map(({ key, label, icon }) => (
             <TabsTrigger
               key={key}

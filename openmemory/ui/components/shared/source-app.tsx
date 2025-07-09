@@ -56,6 +56,11 @@ export const constants = {
     icon: <Icon source="/images/augment.png" />,
     iconImage: "/images/augment.png",
   },
+  gemini: {
+    name: "Gemini",
+    icon: <Icon source="/images/gemini.png" />,
+    iconImage: "/images/gemini.png",
+  },
   default: {
     name: "Default",
     icon: <BiEdit size={18} className="ml-1" />,
