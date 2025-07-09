@@ -84,11 +84,11 @@ make up  # runs openmemory mcp server and ui
 
 After running these commands, you will have:
 - OpenMemory MCP server running at: http://localhost:8765 (API documentation available at http://localhost:8765/docs)
-- OpenMemory UI running at: http://localhost:3000
+- OpenMemory UI running at: http://localhost:3090
 
 #### UI not working on `localhost:3000`?
 
-If the UI does not start properly on [http://localhost:3000](http://localhost:3000), try running it manually:
+If the UI does not start properly on [http://localhost:3090](http://localhost:3090), try running it manually:
 
 ```bash
 cd ui
